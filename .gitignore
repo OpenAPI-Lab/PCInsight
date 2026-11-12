@@ -1,0 +1,15 @@
+# Build trees and local SDK/test evidence
+/build/
+/build-*/
+/.build-tmp/
+/work/
+/evidencia.txt
+
+# Private project coordination (public guides are under docs/)
+/AGENTS.md
+/SEGUIMIENTO.txt
+/docs/CLICKUP_PENDING.md
+
+# Local environment files
+/.env
+/.env.*

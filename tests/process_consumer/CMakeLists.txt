@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_process_consumer LANGUAGES CXX)
+find_package(pcinsight CONFIG REQUIRED)
+add_executable(process-consumer ../../examples/linux_processes.cpp)
+target_link_libraries(process-consumer PRIVATE pcinsight::pcinsight)
+target_compile_features(process-consumer PRIVATE cxx_std_20)

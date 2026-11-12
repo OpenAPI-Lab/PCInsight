@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_app_history_consumer LANGUAGES CXX)
+find_package(pcinsight CONFIG REQUIRED)
+add_executable(app-history-consumer ../../examples/linux_app_history.cpp)
+target_link_libraries(app-history-consumer PRIVATE pcinsight::pcinsight)
+target_compile_features(app-history-consumer PRIVATE cxx_std_20)

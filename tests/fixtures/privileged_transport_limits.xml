@@ -1,0 +1,14 @@
+<!-- PRIVATE TEST BROKER ONLY. Never install on a shared/system bus.
+     Broker-wide, not per-service limits; queues may exceed by one message. -->
+<limit name="max_message_size">32768</limit>
+<limit name="max_incoming_bytes">65536</limit>
+<limit name="max_outgoing_bytes">65536</limit>
+<limit name="max_message_unix_fds">1</limit>
+<limit name="max_incoming_unix_fds">4</limit>
+<limit name="max_outgoing_unix_fds">4</limit>
+<limit name="max_completed_connections">16</limit>
+<limit name="max_incomplete_connections">4</limit>
+<limit name="max_connections_per_user">16</limit>
+<limit name="max_match_rules_per_connection">128</limit>
+<limit name="max_replies_per_connection">32</limit>
+<limit name="auth_timeout">2000</limit>

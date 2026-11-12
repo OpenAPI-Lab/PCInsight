@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_performance_consumer LANGUAGES CXX)
+find_package(pcinsight CONFIG REQUIRED)
+add_executable(performance-consumer ../../examples/linux_performance.cpp)
+target_link_libraries(performance-consumer PRIVATE pcinsight::pcinsight)
+target_compile_features(performance-consumer PRIVATE cxx_std_20)

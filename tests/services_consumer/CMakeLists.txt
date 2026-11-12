@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_services_consumer LANGUAGES CXX)
+find_package(pcinsight CONFIG REQUIRED)
+add_executable(services-consumer ../../examples/linux_services.cpp)
+target_link_libraries(services-consumer PRIVATE pcinsight::pcinsight)
+target_compile_features(services-consumer PRIVATE cxx_std_20)

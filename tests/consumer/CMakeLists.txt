@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_consumer LANGUAGES CXX)
+find_package(pcinsight 0.2.0 EXACT CONFIG REQUIRED)
+add_executable(consumer main.cpp)
+target_link_libraries(consumer PRIVATE pcinsight::pcinsight)

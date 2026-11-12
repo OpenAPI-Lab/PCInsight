@@ -1,0 +1,42 @@
+name: build
+on: [push, pull_request]
+jobs:
+  linux:
+    name: Linux Release (${{ matrix.toolchain }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - toolchain: GCC
+            cxx: g++
+          - toolchain: Clang
+            cxx: clang++
+    env:
+      CXX: ${{ matrix.cxx }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record compiler version
+        run: '"$CXX" --version'
+      - name: Configure Linux Release
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON -DPCINSIGHT_BUILD_TESTS=ON -DPCINSIGHT_BUILD_EXAMPLES=ON
+      - name: Build Linux Release
+        run: cmake --build build --parallel 2
+      - name: Test and verify the installed Linux SDK
+        run: bash scripts/verify-linux-sdk.sh build "$RUNNER_TEMP/pcinsight-verification"
+      - name: Verify local SDK archive and extraction
+        run: |
+          bash scripts/package-linux-sdk.sh \
+            "$RUNNER_TEMP/pcinsight-verification/sdk" \
+            "$RUNNER_TEMP/pcinsight-verification/sdk-payload.txt" \
+            "$RUNNER_TEMP/pcinsight-package" pcinsight-sdk-linux-ci.tar.gz
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build
+      - run: cmake --build build --config Release --parallel
+      - run: ctest --test-dir build -C Release --output-on-failure

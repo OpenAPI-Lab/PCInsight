@@ -1,0 +1,5 @@
+execute_process(COMMAND "${PROBE}" "${BASELINE}" RESULT_VARIABLE rc ERROR_VARIABLE error TIMEOUT 5)
+string(FIND "${error}" "${DIAGNOSTIC}" diagnostic_at)
+if(NOT "${rc}" STREQUAL "${EXIT}" OR diagnostic_at EQUAL -1)
+  message(FATAL_ERROR "Expected exit ${EXIT} and ${DIAGNOSTIC}; got ${rc}: ${error}")
+endif()

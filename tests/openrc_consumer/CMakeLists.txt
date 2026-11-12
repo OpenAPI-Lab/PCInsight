@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+project(pcinsight_openrc_consumer LANGUAGES CXX)
+find_package(pcinsight CONFIG REQUIRED)
+# Intentionally only installed SDK headers/library, no private include path.
+add_executable(openrc-consumer ../linux_openrc_control_public.cpp)
+target_link_libraries(openrc-consumer PRIVATE pcinsight::pcinsight)
+target_compile_features(openrc-consumer PRIVATE cxx_std_20)
+if(MSVC)
+  target_compile_options(openrc-consumer PRIVATE /UNDEBUG)
+else()
+  target_compile_options(openrc-consumer PRIVATE -UNDEBUG)
+endif()

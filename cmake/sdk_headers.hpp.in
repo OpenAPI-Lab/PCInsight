@@ -1,0 +1,16 @@
+#pragma once
+
+namespace pcinsight {
+// Generated with the library. Fingerprint of the packaged public header set,
+// not a promise of cross-compiler or cross-toolchain ABI compatibility.
+static constexpr char sdk_headers_fingerprint[] = "@PCINSIGHT_HEADER_FINGERPRINT@";
+
+extern "C" void pcinsight_require_headers_@PCINSIGHT_HEADER_FINGERPRINT@() noexcept;
+
+// Explicit link check; call from a reachable path in each consumer build.
+// Internal linkage prevents a different translation unit's wrapper from masking
+// this translation unit's selected header version via inline symbol coalescing.
+static inline void require_matching_sdk_headers() noexcept {
+    pcinsight_require_headers_@PCINSIGHT_HEADER_FINGERPRINT@();
+}
+}
