@@ -1,5 +1,7 @@
 # Usar PCInsight desde C++ en Linux
 
+**Idioma:** Español · [English](GETTING_STARTED_CPP.en.md)
+
 PCInsight es una biblioteca C++20, no una aplicación que debas ejecutar para
 consultar métricas. Incluyes sus encabezados y enlazas `libpcinsight.a` con tu
 programa. No necesitas terminar el GUI ni adoptar CMake en tu aplicación.

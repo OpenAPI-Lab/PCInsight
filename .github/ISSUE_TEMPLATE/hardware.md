@@ -6,6 +6,8 @@ labels: ""
 assignees: ""
 ---
 
+**Idioma:** Español · [English](hardware.en.md)
+
 Consulta primero `docs/LINUX_HARDWARE_EVIDENCE.md`. No hace falta probar todo el equipo.
 
 - Versión/commit de PCInsight:

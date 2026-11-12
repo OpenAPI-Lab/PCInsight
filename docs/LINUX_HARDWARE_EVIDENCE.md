@@ -1,5 +1,7 @@
 # Verificar PCInsight en hardware Linux
 
+**Idioma:** Español · [English](LINUX_HARDWARE_EVIDENCE.en.md)
+
 El verificador consume PCInsight 0.2.0 desde un SDK ya instalado. Está separado de la biblioteca y del futuro GUI; no añade dependencias al usuario de la biblioteca. Una muestra indica qué pudo observar el SDK en ese entorno, no si un campo pasó su validación en hardware físico.
 
 ## Ejecutar la comprobación
