@@ -1,5 +1,7 @@
 # Contribuir a PCInsight
 
+**Idioma:** Español · [English](CONTRIBUTING.en.md)
+
 Este repositorio contiene la biblioteca/SDK, sus ejemplos, pruebas y documentación.
 No necesitas clonar ni cambiar el GUI o el proyecto principal que usa la API.
 Empieza por [el estado de soporte](docs/SUPPORT_STATUS.md) y

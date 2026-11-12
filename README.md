@@ -1,5 +1,7 @@
 # PCInsight
 
+**Idioma:** Español · [English](README.en.md)
+
 Biblioteca/SDK C++20 independiente para consultar información del sistema,
 con prioridad en Linux. Este repositorio **no contiene el GUI ni el proyecto
 principal que consume la API**. Puedes modificar, probar y proponer mejoras

@@ -1,5 +1,7 @@
 # Seguridad y reportes
 
+**Idioma:** Español · [English](SECURITY.en.md)
+
 PCInsight 0.2.0 está en desarrollo y no se presenta como componente auditado
 para una frontera de seguridad privilegiada. No ofrece elevación implícita.
 Los rechazos de permisos y las funciones no soportadas no deben sustituirse

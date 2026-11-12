@@ -1,5 +1,7 @@
 # Alcance real de PCInsight
 
+**Idioma:** Español · [English](SUPPORT_STATUS.en.md)
+
 PCInsight 0.2.0 es un SDK en desarrollo. Está disponible para probar e integrar,
 pero no completa todas las funciones de un Administrador de tareas ni asegura
 que cualquier dato exista en toda distribución. Este documento separa
