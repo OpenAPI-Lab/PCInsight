@@ -1,5 +1,7 @@
 # N03: App history Linux para el GUI
 
+**Idioma:** Español · [English](LINUX_APP_HISTORY_REQUIREMENTS.en.md)
+
 Revisión 162, 2026-11-06. Traza R14 a H01/H02/H04/H05 y la acción L01.
 CPU, red y notificaciones son tres informes independientes. Una etiqueta,
 ruta o fecha coincidente no prueba que representen la misma app o periodo.

@@ -1,5 +1,7 @@
 # A05: política de versiones y criterios para congelar ABI
 
+**Idioma:** Español · [English](SDK_VERSION_POLICY.en.md)
+
 Revisión 169, 2026-11-06. El paquete sigue en **0.2.0**, C++20, biblioteca
 estática. No se ha publicado ni declarado 1.0. Esta política aplica a futuras
 entregas etiquetadas; un checkpoint de desarrollo no es una nueva versión.

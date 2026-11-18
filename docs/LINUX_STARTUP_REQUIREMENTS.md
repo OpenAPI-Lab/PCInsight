@@ -1,5 +1,7 @@
 # N03: Startup Apps Linux para el GUI
 
+**Idioma:** Español · [English](LINUX_STARTUP_REQUIREMENTS.en.md)
+
 Revisión 163, 2026-11-06. Traza R15 y Run new task a I01–I07/L01. Separar
 configuración, elegibilidad en el contexto observado e impacto observado:
 una entrada habilitada puede no ser elegible; una elegible puede no arrancar;

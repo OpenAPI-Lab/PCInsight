@@ -97,5 +97,5 @@ target_link_libraries(mi_monitor PRIVATE pcinsight::pcinsight)
 ```
 
 Configure with `-DCMAKE_PREFIX_PATH=/path/to/sdk`. CMake is optional for
-consumers. The [version policy](SDK_VERSION_POLICY.md) (Spanish) explains
+consumers. The [version policy](SDK_VERSION_POLICY.en.md) explains
 why the 0.x SDK does not yet promise a stable 1.0 ABI.

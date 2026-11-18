@@ -42,7 +42,7 @@ does not require your GUI to use CMake.
 - Keep unknown values distinct from zero, `false`, or an empty list. Preserve `Metric` status, units, and scope. Do not present a proxy as a direct measurement.
 - A C++ snapshot is not necessarily atomic. Handle PID and index reuse, discontinuities, permission changes, overflows, and disappearing resources.
 - Test success, missing data, and relevant failures. Prefer private fixtures for cases you cannot reproduce on available hardware. Fixtures do not validate physical hardware.
-- Document public type and semantic changes. Adding a member can break ABI. Rebuild the library and its consumers; see the [SDK version policy](docs/SDK_VERSION_POLICY.md) (Spanish).
+- Document public type and semantic changes. Adding a member can break ABI. Rebuild the library and its consumers; see the [SDK version policy](docs/SDK_VERSION_POLICY.en.md).
 - Do not update a baseline just to make a test pass. Measure the affected configuration, review the difference, and document it. A local test does not establish universal compatibility.
 
 ## What to include in an issue or pull request

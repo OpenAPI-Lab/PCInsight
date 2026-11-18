@@ -1,5 +1,7 @@
 # N03: Usuarios y sesiones Linux para el GUI
 
+**Idioma:** Español · [English](LINUX_USERS_REQUIREMENTS.en.md)
+
 Revisión 164, 2026-11-06. Traza R16 y acciones de Users a J01/J02/J04/J05/J06
 y L01. **Una fila de sesión no es una fila de consumo de esa sesión**: CPU/RAM,
 disco y red tienen agrupaciones diferentes. El GUI debe rotular su alcance,

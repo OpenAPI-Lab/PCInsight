@@ -24,11 +24,11 @@ that uses the SDK does not indicate the status of this API.
 | Services | systemd and separate runit, s6, OpenRC, and SysV adapters | Inventory files and markers do not establish live status. There is no universal init detection. Selecting a provider does not authorize control. |
 
 For fields, units, functions, and tests, see the contracts for
-[performance](LINUX_PERFORMANCE_REQUIREMENTS.md),
-[processes](LINUX_PROCESS_REQUIREMENTS.md),
-[app history](LINUX_APP_HISTORY_REQUIREMENTS.md),
-[startup](LINUX_STARTUP_REQUIREMENTS.md), [users](LINUX_USERS_REQUIREMENTS.md),
-and [services](LINUX_SERVICES_REQUIREMENTS.md) (Spanish).
+[performance](LINUX_PERFORMANCE_REQUIREMENTS.en.md),
+[processes](LINUX_PROCESS_REQUIREMENTS.en.md),
+[app history](LINUX_APP_HISTORY_REQUIREMENTS.en.md),
+[startup](LINUX_STARTUP_REQUIREMENTS.en.md), [users](LINUX_USERS_REQUIREMENTS.en.md),
+and [services](LINUX_SERVICES_REQUIREMENTS.en.md).
 
 ## Missing features, beyond hardware validation
 

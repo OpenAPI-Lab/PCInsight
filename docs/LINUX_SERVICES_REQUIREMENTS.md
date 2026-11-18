@@ -1,5 +1,7 @@
 # N03: Servicios Linux para el GUI
 
+**Idioma:** Español · [English](LINUX_SERVICES_REQUIREMENTS.en.md)
+
 Revisión 165, 2026-11-06. Traza R17 y acciones de servicio a K01–K04 y L05.
 **Inventario, vida del servicio y capacidad de control son cosas distintas.**
 La fuente seleccionada para leer no habilita ni selecciona la API de control.
