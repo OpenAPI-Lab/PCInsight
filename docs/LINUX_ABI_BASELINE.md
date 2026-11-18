@@ -1,5 +1,7 @@
 # A05: línea base de compatibilidad del SDK Linux
 
+**Idioma:** Español · [English](LINUX_ABI_BASELINE.en.md)
+
 Revisión 168, 2026-11-06. El SDK se mantiene en 0.2.0. Esta línea base
 permite revisar cambios en tipos públicos de uso habitual sin afirmar que
 el ABI esté congelado ni que una comparación positiva baste para declararlo.

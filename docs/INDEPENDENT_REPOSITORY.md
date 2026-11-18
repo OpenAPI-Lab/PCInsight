@@ -1,5 +1,7 @@
 # Publicar PCInsight como repositorio independiente
 
+**Idioma:** Español · [English](INDEPENDENT_REPOSITORY.en.md)
+
 La raíz del repositorio debe ser esta carpeta, la que contiene `CMakeLists.txt`,
 `include/pcinsight`, `src`, `README.md` y `LICENSE`. No uses como raíz el workspace
 ni el proyecto grande del GUI. No hay dependencia de ese proyecto consumidor.

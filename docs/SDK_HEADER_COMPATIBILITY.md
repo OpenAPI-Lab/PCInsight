@@ -1,5 +1,7 @@
 # A05: comprobar la pareja de headers y biblioteca del SDK
 
+**Idioma:** Español · [English](SDK_HEADER_COMPATIBILITY.en.md)
+
 Revisión 167, 2026-11-06. El SDK sigue en 0.2.0. El número de paquete y
 `find_package(... EXACT)` no distinguen dos builds 0.x que hayan cambiado un
 tipo público sin cambiar ese número. El header generado `pcinsight/sdk_headers.hpp`
